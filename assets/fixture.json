@@ -1,0 +1,492 @@
+{
+  "label": "DEMO \u2014 SYNTHETIC DATA",
+  "status": "CONCEPT PREVIEW",
+  "as_of": "2026-10-26",
+  "timezone_note": "Fictional property timestamps use explicit UTC offsets; no real property timezone inferred",
+  "record_count": 10,
+  "counts_by_state": {
+    "verification_pending": 1,
+    "evidence_incomplete": 1,
+    "match_pending": 1,
+    "access_blocked": 1,
+    "supervisor_reviewed": 2,
+    "match_rejected": 1,
+    "parts_blocked": 1,
+    "reopened": 1,
+    "on_call_ack_pending": 1
+  },
+  "counts": {
+    "work_orders_marked_complete": 3,
+    "supervisor_record_reviews_complete": 2,
+    "supervisor_verifications_pending": 8
+  },
+  "no_real_people_or_properties": true,
+  "no_external_actions": true,
+  "records": [
+    {
+      "id": "HM-032",
+      "building": "B-03",
+      "unit_display": "\u2022B",
+      "issue": "Synthetic leak",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 2,
+        "recorded_at": "2026-10-19T09:00:00-04:00"
+      },
+      "state": "verification_pending",
+      "owner": {
+        "name": "Avery Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-20T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-811",
+        "state": "complete",
+        "updated_at": "2026-10-19T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": {
+          "ref": "invoice-demo-811",
+          "at": "2026-10-19T11:25:00-04:00",
+          "fictional": true
+        },
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false,
+      "canonical_fictional_unit": "2B",
+      "matching": {
+        "accepted_candidate": "WO-811",
+        "basis": [
+          "unit",
+          "defect_type",
+          "timestamp"
+        ],
+        "rejected_candidate": "WO-820",
+        "rejection_reason": "Different synthetic unit",
+        "status": "human_linked"
+      },
+      "next_action": "Request technician photo; supervisor verification remains pending"
+    },
+    {
+      "id": "HM-033",
+      "building": "B-03",
+      "unit_display": "\u2022C",
+      "issue": "Door hardware",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 3,
+        "recorded_at": "2026-10-20T09:00:00-04:00"
+      },
+      "state": "evidence_incomplete",
+      "owner": {
+        "name": "Morgan Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-21T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-812",
+        "state": "open",
+        "updated_at": "2026-10-20T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-034",
+      "building": "B-03",
+      "unit_display": "\u2022D",
+      "issue": "Window operation",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 4,
+        "recorded_at": "2026-10-21T09:00:00-04:00"
+      },
+      "state": "match_pending",
+      "owner": {
+        "name": "Casey Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-22T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-813",
+        "state": "open",
+        "updated_at": "2026-10-21T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-035",
+      "building": "B-03",
+      "unit_display": "\u2022E",
+      "issue": "Sink drainage",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 5,
+        "recorded_at": "2026-10-22T09:00:00-04:00"
+      },
+      "state": "access_blocked",
+      "owner": {
+        "name": "Avery Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-23T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-814",
+        "state": "open",
+        "updated_at": "2026-10-22T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-036",
+      "building": "B-03",
+      "unit_display": "\u2022F",
+      "issue": "Cabinet repair",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 6,
+        "recorded_at": "2026-10-19T09:00:00-04:00"
+      },
+      "state": "supervisor_reviewed",
+      "owner": {
+        "name": "Morgan Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-20T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-815",
+        "state": "complete",
+        "updated_at": "2026-10-19T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": {
+          "ref": "original-illustration-HM-36-after",
+          "at": "2026-10-19T11:30:00-04:00",
+          "asset_status": "illustration_to_create"
+        },
+        "invoice": {
+          "ref": "invoice-demo-36",
+          "at": "2026-10-19T11:35:00-04:00",
+          "fictional": true
+        },
+        "resident_acknowledgement": {
+          "state": "synthetic_example_only",
+          "at": "2026-10-19T12:00:00-04:00",
+          "not_actual_consent": true
+        }
+      },
+      "supervisor_verification": {
+        "state": "synthetic_record_review_complete",
+        "actor": "Morgan Example",
+        "at": "2026-10-19T13:00:00-04:00",
+        "scope": "Illustrative documentation review only; not safety or regulatory clearance"
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-037",
+      "building": "B-03",
+      "unit_display": "\u2022G",
+      "issue": "Duplicate candidate mismatch",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 7,
+        "recorded_at": "2026-10-20T09:00:00-04:00"
+      },
+      "state": "match_rejected",
+      "owner": {
+        "name": "Casey Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-21T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-816",
+        "state": "open",
+        "updated_at": "2026-10-20T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false,
+      "rejection": {
+        "candidate": "WO-820",
+        "reason": "Wrong masked unit; do not merge",
+        "at": "2026-10-20T12:00:00-04:00"
+      }
+    },
+    {
+      "id": "HM-038",
+      "building": "B-03",
+      "unit_display": "\u2022H",
+      "issue": "Fixture repair",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 8,
+        "recorded_at": "2026-10-21T09:00:00-04:00"
+      },
+      "state": "parts_blocked",
+      "owner": {
+        "name": "Avery Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-22T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-817",
+        "state": "open",
+        "updated_at": "2026-10-21T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-039",
+      "building": "B-03",
+      "unit_display": "\u2022I",
+      "issue": "Recurring moisture report",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 9,
+        "recorded_at": "2026-10-22T09:00:00-04:00"
+      },
+      "state": "reopened",
+      "owner": {
+        "name": "Morgan Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-23T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-818",
+        "state": "open",
+        "updated_at": "2026-10-22T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-040",
+      "building": "B-03",
+      "unit_display": "\u2022J",
+      "issue": "Interior trim repair",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 10,
+        "recorded_at": "2026-10-19T09:00:00-04:00"
+      },
+      "state": "supervisor_reviewed",
+      "owner": {
+        "name": "Casey Example",
+        "role": "Maintenance supervisor",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-20T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-819",
+        "state": "complete",
+        "updated_at": "2026-10-19T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": {
+          "ref": "original-illustration-HM-40-after",
+          "at": "2026-10-19T11:30:00-04:00",
+          "asset_status": "illustration_to_create"
+        },
+        "invoice": {
+          "ref": "invoice-demo-40",
+          "at": "2026-10-19T11:35:00-04:00",
+          "fictional": true
+        },
+        "resident_acknowledgement": {
+          "state": "synthetic_example_only",
+          "at": "2026-10-19T12:00:00-04:00",
+          "not_actual_consent": true
+        }
+      },
+      "supervisor_verification": {
+        "state": "synthetic_record_review_complete",
+        "actor": "Casey Example",
+        "at": "2026-10-19T13:00:00-04:00",
+        "scope": "Illustrative documentation review only; not safety or regulatory clearance"
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    },
+    {
+      "id": "HM-041",
+      "building": "B-03",
+      "unit_display": "\u2022K",
+      "issue": "Urgent report requiring human review",
+      "synthetic": true,
+      "source": {
+        "document": "inspection-demo.csv",
+        "row": 11,
+        "recorded_at": "2026-10-20T09:00:00-04:00"
+      },
+      "state": "on_call_ack_pending",
+      "owner": {
+        "name": "Avery Example",
+        "role": "On-call maintenance lead",
+        "fictional": true
+      },
+      "next_action_at": "2026-10-21T10:00:00-04:00",
+      "next_action_basis": "Illustrative operational review target, not a regulatory deadline",
+      "property_program": null,
+      "notice_applicability_verifier": null,
+      "regulatory_due_at": null,
+      "mapping_state": "applicability_review_required",
+      "work_order": {
+        "id": "WO-820",
+        "state": "open",
+        "updated_at": "2026-10-20T11:20:00-04:00"
+      },
+      "evidence": {
+        "photo": null,
+        "invoice": null,
+        "resident_acknowledgement": null
+      },
+      "supervisor_verification": {
+        "state": "pending",
+        "actor": null,
+        "at": null
+      },
+      "resident_notification": "draft_held",
+      "external_actions_enabled": false
+    }
+  ],
+  "opportunity_stages": [
+    "Operator interview",
+    "Data terms",
+    "Shadow building",
+    "Paid pilot"
+  ],
+  "opportunities_are_synthetic": true
+}

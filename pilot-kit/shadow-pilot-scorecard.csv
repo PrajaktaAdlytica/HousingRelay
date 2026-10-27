@@ -1,0 +1,7 @@
+metric,definition,baseline_window,baseline,shadow_window,shadow,denominator,owner,decision
+Time to triage,Minutes from receipt to accountable human assignment,Not agreed,Not measured,Not agreed,Not measured,Not agreed,To name,Pending
+Orphaned deficiencies,Inspection items without an accepted work-order match,Not agreed,Not measured,Not agreed,Not measured,Not agreed,To name,Pending
+Revisits,Repeat visits for same issue; record cause,Not agreed,Not measured,Not agreed,Not measured,Not agreed,To name,Pending
+Evidence completeness,Proposed closeouts meeting agreed evidence checklist,Not agreed,Not measured,Not agreed,Not measured,Not agreed,To name,Pending
+Unsafe false closures,Unsupported closure triggers immediate stop and human review,Not agreed,Not measured,Not agreed,Not measured,Not agreed,To name,Pending
+Field burden,Additional staff minutes and support effort,Not agreed,Not measured,Not agreed,Not measured,Not agreed,To name,Pending

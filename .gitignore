@@ -1,0 +1,10 @@
+node_modules/
+dist/
+artifacts/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+video/*-still.log
+video/preview-180.png

@@ -1,0 +1,12 @@
+Footer direction, 27 October 2026
+
+Research: Perplexity official MCP, high research preset. Primary sites visually inspected in browser:
+- https://mammothmurals.com/ — monumental wordmark, separated compact utility navigation. Adapted scale contrast, not lettering or composition.
+- https://www.nikolaibain.com/ — optional game alongside readable navigation. Adapted the separation of visual personality from practical links; no game copied.
+
+HousingRelay implementation: original generated pastel brick neighborhood, three studded navigation panels, approved outlined wordmark, all existing links/concept disclosures retained. Decorative image uses empty alt text. No navigation depends on animation.
+
+Generated asset: public/assets/footer-neighborhood-original.png; optimized WebP adjacent. Built-in image_gen tool used.
+Prompt: Original LEGO-style modular architecture; wide horizontal five-building neighborhood on one thin baseplate, pastel matcha/olive/blush/blue, transparent background, architectural miniature, no people/text/logos. Skyline rises toward center. Premium SaaS footer endpiece.
+
+Motion: inspection brick sketches grow and recede; shared button fill moves left-to-right; pilot card fill moves bottom-to-top. All stop or become immediate under reduced motion and the site motion-off control.

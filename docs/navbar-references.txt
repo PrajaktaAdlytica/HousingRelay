@@ -1,0 +1,15 @@
+HousingRelay navbar research — 27 Oct 2026
+Research method: official Perplexity research, high preset.
+
+References:
+https://linear.app/ — separate product exploration from account actions.
+https://stripe.com/products — labels with concise descriptions and grouping.
+https://vercel.com/design/guidelines — semantic navigation, visible focus, touch targets and sticky-header clearance.
+https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/examples/disclosure-navigation/ — click disclosures, aria-expanded, Tab navigation, Escape and focus restoration.
+
+Application:
+Warm light sticky header; centered pale navigation group; isolated sign-in and pilot CTA; grouped Products/Explore panels. No hover styling or pointer-entry opening. Current route/open state remains visible. Removed navbar concept label only; demo-context and footer notices remain.
+The sources establish hierarchy and accessibility guidance, not verified live sticky/hover behavior for each reference website.
+
+QA:
+Navbar top remains 0 at scrollY 1440. Product menu Escape closes and restores focus to products-toggle. Outside click dismisses Explore. Mobile 390px viewport has no horizontal overflow; menu fills area below 68px header, scrolls independently and Escape closes it. Tablet 900px uses compact navigation. Anchors and pinned story/module sections account for header height. Build and Sites tests pass.

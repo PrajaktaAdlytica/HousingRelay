@@ -1,0 +1,37 @@
+HOUSINGRELAY — HOSTINGER PHP/HTML HOSTING
+
+Repository: https://github.com/PrajaktaAdlytica/HousingRelay
+Source branch: main
+Deployment branch: hostinger
+Deployment directory: public_html (root)
+Build command on Hostinger: NONE
+Start command on Hostinger: NONE
+PHP code / database: not required
+
+This Vite/React frontend is compiled to static HTML, CSS and JavaScript. It can run on ordinary PHP/HTML hosting without a Node.js web-app slot. You still need an active hosting plan with an available regular website slot; purchasing the domain alone is not hosting.
+
+SETUP
+1. hPanel > Websites > choose your web-hosting plan > Create website > Custom PHP/HTML website > Empty website.
+2. Assign your existing domain. If it already belongs to another site, use a temporary domain first or release it from the old site when ready.
+3. Open the new site's Dashboard > Advanced > Git > Connect with GitHub. Grant access to PrajaktaAdlytica/HousingRelay.
+4. Select branch hostinger, deployment directory public_html, then Deploy. Do not select main: it contains source files, not the compiled site.
+5. If your account shows the older Git screen, use repository https://github.com/PrajaktaAdlytica/HousingRelay.git, branch hostinger, and leave Directory blank for public_html. The first legacy deployment requires an empty target directory. Back up any existing site before replacing files. Configure the provided Auto Deployment webhook if desired.
+6. Make sure public_html/index.html and public_html/.htaccess exist. The included .htaccess supports refreshing routes such as /products/repair-desk and /sign-in.
+7. If the domain already uses Hostinger nameservers, assignment should connect it. If it uses external DNS, follow hPanel's domain connection guide and use the exact IP/records it provides. Preserve existing email MX/TXT records. DNS changes can take up to 24 hours.
+8. Check Dashboard > Security > SSL. Wait for automatic SSL activation or use Install SSL if required. Verify HTTPS after DNS resolves.
+9. Open the domain, play/skip the intro, open /products/repair-desk and /sign-in, then refresh each directly. Confirm the favicon and mobile menu. If favicon is stale, hard-refresh or test a fresh browser tab.
+
+FUTURE UPDATES
+Edit source on main and push. The GitHub Actions workflow installs dependencies, builds, tests, then updates hostinger with only dist/client contents. Hostinger's Git integration pulls hostinger and serves those files as-is. Watch the GitHub Actions and hPanel deployment logs. Never edit hostinger by hand; the next build replaces it. This workflow needs repository Actions enabled and contents:write permission; restrictive organization policies may require an administrator to allow it.
+
+MANUAL UPLOAD FALLBACK
+Upload the supplied housingrelay-hostinger.zip using hPanel File Manager and extract into public_html. index.html must be directly inside public_html, not inside an extra dist/client folder. Include hidden .htaccess. No npm, PHP application conversion, or Node process is needed on Hostinger.
+
+PRODUCT SCOPE
+The website and isolated demo work as a static site. Sign-in, lead forms, dispatch and integrations remain clearly labeled frontend previews. Hosting does not add an authentication backend, email delivery or resident-data access controls. Search-engine noindex is retained from the approved concept preview.
+
+OFFICIAL REFERENCES (checked 27 October 2026)
+https://www.hostinger.com/support/1583214-how-to-add-a-website-in-hostinger/
+https://docs.hostinger.com/websites/git
+https://www.hostinger.com/support/1583258-how-to-install-lifetime-ssl-at-hostinger/
+https://www.hostinger.com/support/1583307-how-to-create-an-htaccess-file-at-hostinger/

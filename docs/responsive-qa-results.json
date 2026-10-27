@@ -1,0 +1,97 @@
+[
+  {
+    "broken": 0,
+    "h1": "Every building.A connected team.",
+    "path": "/sign-in/",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "broken": 0,
+    "h1": "Let’s start withone building.",
+    "path": "/request-demo",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "broken": 0,
+    "h1": "Start small. Learn something real.",
+    "path": "/pricing",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "broken": 0,
+    "h1": "Supervisor workbench",
+    "path": "/demo/supervisor",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "broken": 0,
+    "h1": "Good work.Every pieceaccounted for.",
+    "path": "/",
+    "scrollWidth": 390,
+    "width": 390
+  },
+  {
+    "clippedControls": [],
+    "path": "/request-demo",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "clippedControls": [],
+    "path": "/sign-in/",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "clippedControls": [],
+    "path": "/pricing",
+    "scrollWidth": 320,
+    "width": 320
+  },
+  {
+    "broken": 0,
+    "path": "/products/repair-desk",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "path": "/sign-in/",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "path": "/request-demo",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "path": "/",
+    "scrollWidth": 768,
+    "width": 768
+  },
+  {
+    "broken": 0,
+    "path": "/products/repair-desk",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "path": "/request-demo",
+    "scrollWidth": 1440,
+    "width": 1440
+  },
+  {
+    "broken": 0,
+    "path": "/sign-in/",
+    "scrollWidth": 1440,
+    "width": 1440
+  }
+]

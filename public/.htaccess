@@ -1,0 +1,15 @@
+# HousingRelay static React site on Apache/LiteSpeed PHP/HTML hosting.
+DirectoryIndex index.html
+Options -Indexes -MultiViews
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Existing files (including videos, fonts, and favicons) are served directly.
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  # Missing assets must stay 404 instead of returning HTML.
+  RewriteRule ^(?:assets|brand|films|pilot-kit)/ - [L]
+  RewriteRule \.[a-zA-Z0-9]{1,8}$ - [L]
+  # Browser-history routes such as /sign-in and /products/repair-desk.
+  RewriteRule ^ index.html [L]
+</IfModule>

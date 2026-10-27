@@ -1,0 +1,43 @@
+name: Build Hostinger static website
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: hostinger-static
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: source
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: source/package-lock.json
+      - name: Build and validate
+        working-directory: source
+        run: |
+          npm ci
+          npm run build
+          npm run test:sites
+      - uses: actions/checkout@v4
+        with:
+          ref: hostinger
+          path: deployment
+      - name: Publish built files to hostinger branch
+        run: |
+          rsync -a --delete --exclude=.git source/dist/client/ deployment/
+          cd deployment
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all
+          if ! git diff --cached --quiet; then
+            git commit -m "Build from ${GITHUB_SHA}"
+            git push origin HEAD:hostinger
+          fi
